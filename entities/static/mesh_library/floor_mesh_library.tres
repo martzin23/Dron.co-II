@@ -1,4 +1,4 @@
-[gd_resource type="MeshLibrary" load_steps=177 format=4 uid="uid://shb3s2x2xvvn"]
+[gd_resource type="MeshLibrary" format=4 uid="uid://shb3s2x2xvvn"]
 
 [ext_resource type="Material" uid="uid://byav3un4bh6s6" path="res://shared/materials/palette_color.tres" id="1_foh4r"]
 
