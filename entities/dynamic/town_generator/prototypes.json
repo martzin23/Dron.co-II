@@ -1,0 +1,26 @@
+{
+	"01_road": {
+		"slots": {
+			"z_neg": "r",
+			"x_pos": "f",
+			"z_pos": "r",
+			"x_neg": "f",
+		}
+	},
+	"04_road": {
+		"slots": {
+			"z_neg": "f",
+			"x_pos": "r",
+			"z_pos": "r",
+			"x_neg": "f",
+		}
+	},
+	"14_concrete": {
+		"slots": {
+			"z_neg": "f",
+			"x_pos": "f",
+			"z_pos": "f",
+			"x_neg": "f",
+		}
+	}
+}

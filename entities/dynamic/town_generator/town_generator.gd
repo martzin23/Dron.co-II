@@ -14,14 +14,19 @@ class_name TownGenerator
 @export var SIZE : int
 
 func _ready() -> void:
-	var positions = BUILDING_GRID_MAP.get_used_cells() + FLOOR_GRID_MAP.get_used_cells()
-	BUILDING_GRID_MAP.clear()
-	FLOOR_GRID_MAP.clear()
-	var random = RandomNumberGenerator.new()
-	var n = get_item_count()
-	for position in positions:
-		var index = random.randi() % n
-		set_cell(position, index)
+	var wfc = WaveFunctionCollapse.new()
+	#var p = wfc.load_prototypes()
+	#print(wfc.match_prototypes(wfc.permutate_prototypes(p)))
+	print(wfc.solve(Vector2i(5, 5)))
+	
+	#var positions = BUILDING_GRID_MAP.get_used_cells() + FLOOR_GRID_MAP.get_used_cells()
+	#BUILDING_GRID_MAP.clear()
+	#FLOOR_GRID_MAP.clear()
+	#var random = RandomNumberGenerator.new()
+	#var n = get_item_count()
+	#for position in positions:
+		#var index = random.randi() % n
+		#set_cell(position, index)
 
 func id_to_map(id: int) -> Array:
 	var nb = BUILDING_MESH_LIBRARY.get_item_count()
